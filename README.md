@@ -143,6 +143,14 @@ docker exec -it qinglong bash git_pull
 ```
 docker exec -it jd bash jup
 ```
+#更新v4
+```
+docker run --rm \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    containrrr/watchtower -cR \
+    你容器名
+```
+
 ##安装v4面板
 
 #开启DIY每次重启会重启面板
@@ -165,18 +173,24 @@ pm2 start server.js
 ```
 #和尚大佬的库v4拉取方法
 ```
-OwnRepoUrl1="https://github.com/monk-coder/dust.git"
-OwnRepoUrl2="https://github.com/monk-coder/dust.git"
-OwnRepoUrl3="https://github.com/monk-coder/dust.git"
-OwnRepoUrl4="https://github.com/monk-coder/dust.git"
+OwnRepoUrl1="https://ghproxy.com/https://github.com/monk-coder/dust"
+OwnRepoUrl2="https://ghproxy.com/https://github.com/monk-coder/dust"
+OwnRepoUrl3="https://ghproxy.com/https://github.com/monk-coder/dust"
+OwnRepoUrl4="https://ghproxy.com/https://github.com/monk-coder/dust"
+OwnRepoUrl5="https://ghproxy.com/https://github.com/nianyuguai/longzhuzhu/"
+OwnRepoUrl6="https://ghproxy.com/https://github.com/passerby-b/JDDJ"
 
 OwnRepoBranch1="dust"
 OwnRepoBranch2="dust"
 OwnRepoBranch3="dust"
 OwnRepoBranch4="dust"
+OwnRepoBranch5="main"
+OwnRepoBranch6="main" 
 
 OwnRepoPath1="i-chenzhe"
 OwnRepoPath2="car"
 OwnRepoPath3="member"
 OwnRepoPath4="normal"
+OwnRepoPath5="qx"
+OwnRepoPath6=""
 ```
