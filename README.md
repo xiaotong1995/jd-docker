@@ -1,3 +1,23 @@
+###一键安装Docker（官方快速安装）
+## Usage:
+
+From `https://get.docker.com`:
+```shell
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+```
+
+From `https://test.docker.com`:
+```shell
+curl -fsSL https://test.docker.com -o test-docker.sh
+sh test-docker.sh
+```
+
+From the source repo (This will install latest from the `test` channel):
+```shell
+sh install.sh
+```
+
 ###CentOS 安装 docker
 
 ##centos8.2以下的如果部署不成功，先重置服务器，再升级一下内核就可以了
