@@ -1,4 +1,4 @@
-###一键安装Docker（官方快速安装）
+### 一键安装Docker（官方快速安装）
 ## Usage:
 
 From `https://get.docker.com`:
@@ -157,7 +157,7 @@ docker run -d \
 
 #青龙更新命令
 ```
-docker exec -it qinglong bash git_pull
+docker exec -it qinglong bash ql update
 ```
 #v4更新命令
 ```
