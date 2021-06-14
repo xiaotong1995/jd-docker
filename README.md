@@ -17,6 +17,17 @@ From the source repo (This will install latest from the `test` channel):
 ```shell
 sh install.sh
 ```
+## 检测Docker是否安装成功
+docker -v
+
+## 启动Docker及系统重启后能自动启动
+systemctl start docker.service
+systemctl enable docker.service
+
+## 安装Potainer
+docker volume create portainer_data
+
+docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
 
 ###CentOS 安装 docker
 
