@@ -1,5 +1,5 @@
 
-const $ = new Env('太太乐');
+const $ = new Env('太太乐库存');
 var request = require("request");
 let status;
 status = (status = ($.getval("ttlstatus") || "1") ) > 1 ? `${status}` : ""; // 账号扩展字符
