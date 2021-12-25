@@ -11,10 +11,7 @@ import schedule
 # 礼品代码
 gift_list = ['61', '62', '631', '633']
 # 导入账户
-try:
-    from ttl_json import accounts
 
-    lists = accounts
 except Exception as error:
     print(f'失败原因:{error}')
     lists = []
@@ -222,7 +219,7 @@ def maina():
 
 # 定义pushplus推送
 def pushplus_bot(title, content):
-    PUSH_PLUS_TOKEN = '9e3f47b7e9dc47c6b7d4966851fc597b'
+    PUSH_PLUS_TOKEN = ''
     try:
         print("\n")
         if not PUSH_PLUS_TOKEN:
