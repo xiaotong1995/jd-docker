@@ -17,6 +17,10 @@ From the source repo (This will install latest from the `test` channel):
 ```shell
 sh install.sh
 ```
+##docker composed
+```shell
+bash <(curl -sSL https://gitee.com/SuperManito/LinuxMirrors/raw/main/DockerInstallation.sh)
+```
 ## 检测Docker是否安装成功
 ```shell
 docker -v
