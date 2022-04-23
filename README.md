@@ -210,7 +210,7 @@ npm i
 pm2 start server.js
 ```
 
-###FRP
+### FRP
 ```
 docker run --restart=always --network host -d -v /etc/frp/frps.ini:/etc/frp/frps.ini --name frps snowdreamtech/frps
 ```
