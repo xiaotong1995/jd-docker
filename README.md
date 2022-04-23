@@ -191,9 +191,9 @@ docker run --rm \
 
 ##安装v4面板
 
-#开启DIY每次重启会重启面板
+####开启DIY每次重启会重启面板
 
-#先进入容器
+###先进入容器
 
 ```
 docker exec -it jd bash
@@ -201,16 +201,16 @@ docker exec -it jd bash
 ```
 wget -q https://ghproxy.com/https://raw.githubusercontent.com/xiaotong1995/jd-docker/main/v4mb.sh -O v4mb.sh && chmod +x v4mb.sh && ./v4mb.sh
 ```
-#重启手动运行面板
+####重启手动运行面板
 
-#先进入容器
+### 先进入容器
 ```
 cd panel
 npm i
 pm2 start server.js
 ```
 
-#FRP
+###FRP
 ```
 docker run --restart=always --network host -d -v /etc/frp/frps.ini:/etc/frp/frps.ini --name frps snowdreamtech/frps
 ```
