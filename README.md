@@ -209,26 +209,13 @@ cd panel
 npm i
 pm2 start server.js
 ```
-#和尚大佬的库v4拉取方法
-```
-OwnRepoUrl1="https://ghproxy.com/https://github.com/monk-coder/dust"
-OwnRepoUrl2="https://ghproxy.com/https://github.com/monk-coder/dust"
-OwnRepoUrl3="https://ghproxy.com/https://github.com/monk-coder/dust"
-OwnRepoUrl4="https://ghproxy.com/https://github.com/monk-coder/dust"
-OwnRepoUrl5="https://ghproxy.com/https://github.com/nianyuguai/longzhuzhu/"
-OwnRepoUrl6="https://ghproxy.com/https://github.com/passerby-b/JDDJ"
 
-OwnRepoBranch1="dust"
-OwnRepoBranch2="dust"
-OwnRepoBranch3="dust"
-OwnRepoBranch4="dust"
-OwnRepoBranch5="main"
-OwnRepoBranch6="main" 
-
-OwnRepoPath1="i-chenzhe"
-OwnRepoPath2="car"
-OwnRepoPath3="member"
-OwnRepoPath4="normal"
-OwnRepoPath5="qx"
-OwnRepoPath6=""
+#FRP
 ```
+docker run --restart=always --network host -d -v /etc/frp/frps.ini:/etc/frp/frps.ini --name frps snowdreamtech/frps
+```
+```
+docker run --restart=always --network host -d -v /etc/frp/frpc.ini:/etc/frp/frpc.ini --name frpc snowdreamtech/frpc
+```
+
+
